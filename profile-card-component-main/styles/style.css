@@ -1,0 +1,149 @@
+html, body {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0rem;
+  line-height: 1.6rem;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+:root {
+  --DCyan:hsl(185, 75%, 39%);
+  --VDblue:hsl(229, 23%, 23%);
+  --DGblue:hsl(227, 10%, 46%);
+  --Dgray:hsl(0, 0%, 59%);
+  --font:'Kumbh Sans', sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+html body {
+  overflow: hidden;
+  font-family: var(--font);
+  background: var(--DCyan);
+  color: var(--VDblue);
+}
+
+html body .top {
+  position: absolute;
+  top: -65%;
+  right: 35%;
+  z-index: -1;
+}
+
+@media (min-width: 62.5em) {
+  html body .top {
+    right: 60%;
+    top: -55%;
+  }
+}
+
+html body .bottom {
+  position: absolute;
+  bottom: -65%;
+  left: 35%;
+  z-index: -1;
+}
+
+@media (min-width: 62.5em) {
+  html body .bottom {
+    left: 53%;
+  }
+}
+
+html body .content {
+  width: 70% !important;
+  margin: 0 auto;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media (min-width: 62.5em) {
+  html body .content {
+    width: 35% !important;
+  }
+}
+
+html body .content .cdsvg {
+  background-image: url(../images/bg-pattern-card.svg);
+  background-size: contain;
+  width: 100rem !important;
+  display: block;
+  height: 18rem;
+}
+
+html body .content .cntn {
+  width: 100vh;
+  height: 100vh;
+}
+
+html body .content .scnd {
+  position: absolute;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  top: 41%;
+  background: white;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+html body .content .scnd h1 {
+  padding-top: 1rem;
+}
+
+html body .content .scnd h1 span {
+  color: var(--DGblue);
+  padding-left: .7rem;
+}
+
+html body .content .scnd h2 {
+  color: var(--DGblue);
+  font-weight: 400;
+}
+
+html body .content .scnd img {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -80%);
+          transform: translate(-50%, -80%);
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+html body .content .third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10%;
+  height: 5rem;
+  background-color: white;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html body .content .third .follow p, html body .content .third .like p, html body .content .third .photo p {
+  font-weight: 400;
+  color: var(--DGblue);
+}
+/*# sourceMappingURL=style.css.map */
